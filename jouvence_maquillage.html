@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh6.googleusercontent.com/-C-Hw65AuVxM/V5dorOn9i6I/AAAAAAAAA80/Z_5-SRxc6RIPfw32vmL3P8mQi8NEm5T0gCL0B/w335-h320/BB.jpg"/>
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE BB CREME</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">L’Aloe BB crème offre un effet « Peau Nue » subtil et naturel. Spécialement formulée pour hydrater*, corriger, unifier, raviver l’éclat et protéger la peau des rayons UV (SPF 20 pour la teinte Nude et SPF 10 pour la teinte Cocoa) tout en offrant un voile délicatement teinté. Sa texture fraîche et onctueuse se fond aussi facilement qu’un soin quotidien pour une peau parfaite.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-ROhIbdFLNS4/V5dxqFWftQI/AAAAAAAABFw/Avcc1JcFda8NKfAPkQnO3PMJ1E9yGYXUQCL0B/w346-h331/POUDRE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">POUDRE CREME</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">La Poudre Crème allie la texture fondante d’un fond de teint à un effet correcteur modulable pour créer un effet Teint Parfait. La Poudre Crème se travaille facilement à l’aide d’une éponge ou d’un pinceau, se fond à la peau et se transforme dès l’application en un fini mat et naturel. Non desséchante, sa formule associant l’Aloe Vera à de l’extrait d’Orchidée permet de conserver une peau douce, pulpeuse et un confort absolu tout au long de la journée.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-QpecNds8rb0/V5EL-1RAYXI/AAAAAAAAANI/QKRTtyfHr_IPi7y2V-Pk2UyxJkdPUpx6Q/w346-h331/COMPACTE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">POUDRE COMPACTE</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Le Correcteur de Teint Duo permet de camoufler toutes les petites imperfections et les cernes. Véritable complice maquillage à toujours avoir sur soi, sa formule douce et crémeuse, enrichie en Aloe Vera, permet une application rapide et facile pour un teint zéro défaut.
+                        </p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh6.googleusercontent.com/-U3ZyhtIvKkc/V5dp3t4EnmI/AAAAAAAAA90/k0Ilc2nm4KYNQ2OcVLHwyi411QFAw4cxQCL0B/w335-h320-no/DUO.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_04">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">CORRECTEUR DE TEINT DUO</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">Le Correcteur de Teint Duo permet de camoufler toutes les petites imperfections et les cernes. Véritable complice maquillage à toujours avoir sur soi, sa formule douce et crémeuse, enrichie en Aloe Vera, permet une application rapide et facile pour un teint zéro défaut.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh6.googleusercontent.com/-QIqGlbqHkSA/V5dqAGdQlkI/AAAAAAAAA-U/gBpC4nw47ggmEVVebR2Y5C1wCihcTWt3A/w335-h320-no/MINERALE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_05">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">POUDRE MINERALE</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">Impalpable, illuminant délicatement le teint par un voile de couleur, la Poudre Minérale procure un maquillage tout en nuances et un effet Bonne Mine très naturel. Sa formule, enrichie en Aloe Vera et en Vitamine E offre un confort parfait tout au long de la journée pour une peau très douce.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh4.googleusercontent.com/-c-NqX9pOHKw/V5dqFAgpMoI/AAAAAAAAA-4/PMttZBUPq6Q12lyYRpK0isxd3tp9JnVJgCL0B/w335-h320-no/BLUSH.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_06">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">BLUSH</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Une texture poudrée facile à travailler et à estomper pour sculpter les pommettes et modeler le visage. 6 nouvelles teintes délicates, fraîches ou éclatantes qui dessinent des pommettes pulpeuses et illuminent le teint.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh6.googleusercontent.com/-byySINv7fxo/V5dr-EcuRRI/AAAAAAAAA_0/u10A78t094EmYcZ69vaA9y6LUuUy09FHACL0B/w335-h320-no/ROUGE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_07">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ROUGES A LEVRES</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Le Rouge à lèvres adoucit et repulpe les lèvres grâce à sa texture onctueuse et hydratante*. 12 nuances naturelles, éclatantes ou sophistiquées alliées à un doux parfum de vanille pour des lèvres encore plus gourmandes. Véritable atout séduction, les lèvres sont galbées, douces et voluptueuses.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh4.googleusercontent.com/-c9ggYn6mXn4/V5dsETbLNmI/AAAAAAAABAU/bf7ul8W00RQXveKmYl2yBBJIA7Va2LiIgCL0B/w335-h320-no/GLOSS.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_08">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">SONYA GLOSS</h3>
+                  </div>
+                  <div class="modal-body">
+                       <p class="fra">Grâce à sa nouvelle formule, enrichie en Aloe Vera, les 5 couleurs du Gloss apporteront à vos lèvres un brillant éclatant et une touche gourmande grâce à son parfum à croquer. Astucieux grâce à son miroir et sa lumière incrustée dans l’applicateur, les retouches seront faciles à effectuer même dans les endroits peu éclairés.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh4.googleusercontent.com/-uMAfrB1XOK4/V5dsOqdYxiI/AAAAAAAABCI/282SJ7psCFg-tZMHIqbA_rm96GTehJmsg/w335-h320-no/LEVRE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_09">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_09" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">CRAYON CONTOUR DES LEVRES</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Une texture douce et soyeuse pour un tracé haute précision. Le Crayon Contour des Lèvres s’utilise seul, simplement estompé, pour un rendu très naturel ou sous le rouge à lèvres pour un maquillage plus sophistiqué. Les lèvres sont dessinées à la perfection.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-zuUi3r-6kv4/V5dsa3hOrrI/AAAAAAAABBM/nPdj_yooejQP2DZQFYhrw7Jc70-r-DARg/w346-h331/PAUPIERE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_10">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">DUO D'OMBRE A PAUPIERES</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">6 duos d’Ombres à Paupières de couleurs complémentaires pour créer un dégradé parfait. Sa texture poudre ultra-douce, facile à appliquer et longue tenue, permet de laisser libre court à son inspiration pour mettre en valeur et illuminer son regard.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-Iv2rcExikTQ/V5dsiEUGDhI/AAAAAAAABBs/fr4UTGAADUw9QWgjEGUBEYj--Do295RJwCL0B/w346-h331/DEMAQUILLANT.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_11">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">DEMAQUILLANT POUR YEUX</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Spécialement conçue pour parfaire le démaquillage, cette lotion enrichie en gel d’Aloe Vera associé au thé blanc purifie et tonifie la peau. Ne contient pas d’alcool. 
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-_ctgKpKV8Vs/V5dtY6Z0q1I/AAAAAAAABEM/j82tTTA7WmIe-KiwZPwmtVMdFAAQbj-2g/w346-h331/CRAYON_YEUX.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_12">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">CRAYON YEUX</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Sa texture soyeuse et onctueuse permet un tracé facile et précis pour sculpter et agrandir l’oeil. Le regard est intense et profond.
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-NSLRWY5Jtdk/V5dthmnJIhI/AAAAAAAABEM/fLhuxGl6of8ygHLe9QfGnrcksCUc2iWzg/w346-h331/MASCARA.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_13">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">MASCARA ALLONGEANT</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">EN RUPTURE - Densifier l’éclat de ses yeux en quelques secondes grâce au nouveau Mascara Allongeant. Sa formule, enrichie en Aloe Vera, allonge les cils et les sépare parfaitement pour un regard inoubliable et un effet « longue durée ».
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh6.googleusercontent.com/-atMvH8hOCyA/V5dtpp1Fo2I/AAAAAAAABEM/wF7qg5e0f90RerX1JGVJmCkRkLjG_pGjACL0B/w335-h320-no/VOLUME.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_14">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">MASCARA VOLUME</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="fra">Un volume instantané pour étoffer et souligner le regard toute la journée. Le Mascara Volume densifie les cils pour offrir profondeur et volume sans paquet, pour un regard hypnotisant.
+                        </p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

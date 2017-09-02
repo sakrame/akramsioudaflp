@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:50px;;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/HL1RMTJvruafvOdo-EnwML6opXWP5yQlcQiFBNJcjJLq5Wj-MVDL3DX3P6lEyZOAT4Nqx_jaAw=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+            <a class="close-overlay hidden">x</a>
+                </div>
+            </div>          
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">PULPE D'ALOE STABILISEE</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Premier produit Forever à avoir obtenu le label du IASC (Conseil International scientifique de l’Aloe Vera), la Pulpe d’Aloès Stabilisée est le produit à utiliser quotidiennement pour conserver un bien-être optimal. L’Aloe Vera contribue au maintien du système immunitaire. Elle possède de puissants antioxydants qui aident à renforcer les défenses de l’organisme. Elle stimule le métabolisme et a un effet bénéfique en cas de fatigue.</p><hr>
+                        <p class="arb">هو المنتج رقم 1 لدى شركة فوريفر ليفينج برودكتس، و يتكون من جل الألوفيرا المستقر الصافي بنسبة 100% وهو منتج لا يضاهيه منتج آخر شبيه له في مجاله. الجل الموجود داخل نبتة الألوفيرا يحتوي على 200 عنصر غذائي بما في ذلك 20 معدنا و 18  حامض أميني و 12 فيتامين.<br> 
+                        جل الألوفيرا من فوريفر  هو مستقر ومحفوظ بعملية طبيعية وهذه الطريقة مسجلة باسم فوريفر بما يحفظ خواصه الصحية دون تغيير ولذلك فهو الأفضل لمن يسعون للمحافظة على جهازهم الهضمي سليم ومعافى ويتوقون لرفع طاقة أجسامهم<br>  
+                        الحجم : 1 ليتر.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/ldYBp3HmOGvgSY5PbdiJJv3vrm5WM_CSo0H-YyjgJLKpubxBeA8s7grK8ZdpNAhLuGZ2dQqOyg=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">COEUR D'ALOE (PEACHES)</h3>
+                  </div>
+                  <div class="modal-body">
+                               <p class="fra">Savoureux et doux, le Cœur d’Aloès est enrichi en concentré de jus de pêche. Sa saveur sucrée a spécialement été conçue pour les enfants et les gourmands.<br> L’Aloe Vera aide à stimuler le métabolisme, contribue aux défenses naturelles contre les micro-organismes et a un effet bénéfique en cas de fatigue.</p><hr>
+                        <p class="arb">جل الألوفيرا بالخوخ، طعم لا مثيل له يتميز بالنقاء ومغذي، مزيج من قطع جل الألوفيرا تسبح في عصير الخوخ الناضج بأشعة الشمس.<br>
+أضفنا اليه الجزريات المشهورة بفوائدها كمضاد للأكسدة ومصدر لفيتامين أ  و هو ضروري لدعم جهاز المناعة،  عصير مناسب للأطفال و هم يحبونه لمذاقه  اللذيذ وشكله المميز.<br>
+الحجم 1 ليتر.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/jpnAcU25h37hB_8FWDcYkj7PeazRO52gH_B6xskovM76Zk-dP13MRKpZycYk3x0RurQDAtVuiw=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE BERRY NECTAR</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">
+                            Au goût délicieusement acidulé, l’Aloe Berry Nectar contient de l’extrait de canneberge associé à de la pulpe d’Aloe Vera qui possède des antioxydants piégeurs de radicaux libres. La plante contribue aux défenses naturelles contre les micro-organismes.<br>
+                            L’Aloe Berry Nectar stimule les défenses naturelles et les réactions énergétiques du corps. Il aide à la protection des cellules contre le vieillissement (dommages oxydatifs). Mieux protégé, l’organisme est en pleine forme.</p><hr>
+                            <p class="arb">يحتوي هذا المشروب على كل الفيتامينات والمعادن والأحماض الأمينية والانزيمات الموجودة  في هلام الألوفيرا مضافا اليها فوائد التفاح والتوت البري ومنتجات العسل الأصلي، به نسب عالية من الفيتامينات المضادة للأكسدة C و إ والبوتاسيوم والبكتين.<br> 
+مفيد جداً للذين يعانون من انحباس البول، التهاب المثانة، حصوات الكلى، وكذلك حالات الربو.<br>
+مفيد جداً للنساء اللواتي يعانون من آلام في الدورة الشهرية، فهذا المشروب يخفف من تلك الآلام بصورة طبيعية وبدون أية آثار جانبية.<br>
+الحجم 1 ليتر.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/2h4gWnyBO011nSJ7fIhM_Xi3Q9V7_VpNxUV38Likx4zq7dqs1BJh5YDyMLEksiheRDa6xo-xQw=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_04">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                
+            <div class="modal fade" id="myModal_04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 style="text-align:center;">FOREVER ALOE 2 GO</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p class="fra">Véritable booster d’énergie à portée de main, Forever Aloe 2 Go, vous propose un mélange de jus de fruits associé à l’Aloe Vera.<br>
+                        Myrtille, grenade, mûre, framboise, raisin et mangoustan, l’alliance de l’Aloès et des fruits pour une boisson gourmande et rafraîchissante qui vous apporte tonus et vitalité au quotidien.<br>
+                        La vitamine C stimule les défenses naturelles. Elle contribue également à la protection des cellules contre le vieillissement cellulaire (dommages oxydatifs). Elle est recommandée en cas de fatigue passagère.<br>
+                        Forever Aloe 2 Go permet de stimuler les défenses naturelles de votre organisme et contribue à votre bien-être physique en cas de fatigue passagère.</p><hr>
+                        <p class="arb">لقد جربت فوائد الألوفيرا الصحية و تذوقت طعم بومستين باور اللذيذ، لذالك قامت فوريفر ليفينق برودكتس بمزج العصيرين معا في عبوة صغيرة سهلة الإستهلاك.<br>
+                        فوريفر ألو تو چو بعبوته المميزة جاهز للاستخدام في كل وقت وفي أي مكان، سواء أكنت في مكتبك أو في سيارتك، كل ما عليك هو فتح العبوة المرنة واستمتع بمذاق ألو تو قو ذو الفوائد المتعددة.<br>
+                        التعبئة : علبة كرتونية صغير تحتوي على 30 عبوة، سعة العبوة  90 مل تقريبا.</p>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             </div>
+   
+             </div>
+    </div>
+
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

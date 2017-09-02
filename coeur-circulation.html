@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+                    <div class="img">
+                        <img class="img-responsive" src="https://lh3.googleusercontent.com/WQCr-8rR9HIGTFf4743uznOcYTwjHbEyiyhyxGSL4nKP7RBCjdEjvEQhltT-Rg8jnGguTlTEhg=w1366-h768-no">
+                        <div class="overlay">
+                            <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                        </div>
+                    </div>           
+                    <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h3 style="text-align:center;">FOREVER GINKGO PLUS</h3>
+                          </div>
+                          <div class="modal-body">
+                                   <p class="fra">
+                            Aussi appelé arbre aux mille écus, le ginkgo biloba est un arbre légendaire, vivant parfois plus de 1000 ans. Il peuplait déjà la planète il y a 300 millions d’années. Cet arbre, d’une exceptionnelle résistance aux stress environnementaux, s’adapte facilement aux milieux urbains.<br>
+                            De nombreuses médecines traditionnelles considèrent que ses feuilles ont un effet bénéfique sur la circulation sanguine. Le ginkgo biloba est riche en flavonoïde dont les bienfaits anti-oxydants et stimulants sont appréciés depuis des millénaires.
+                        </p><hr>
+                        <p class="arb">طور ليستخدم مع أقدم نوع من الأعشاب في العالم و مزج مع (الجينكو بيبلوبا) المعروف بكونه مغذي خرافي للدماغ مع ثلاثة أنواع من الأعشاب الصينية القوية و الفعالة، الجانودرما و الريتشي مشروم (فطر) الشيساندرا والفورتي لتحصل على منشط قوي للدماغ و قد وجدت لزيادة تدفق الدم في كل الجسم لكن بشكل خاص للدماغ و هي مادة مفيدة لضعف الذاكرة و للإرهاق الفكري، تنعش المزاج و تنشط الطاقة و تزيد من التركيز.<br>
+مزيج مميز مستخلص من أربع نباتات عرفت في الصين منذ آلافف السنين، إنه غذاء الفكر المميز.<br>
+60 حبة في العبوة.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+                    <div class="img">
+                        <img class="img-responsive" src="https://lh3.googleusercontent.com/w_wSiq115pwKseqro3XkldlaCqkQGf335QLja-KXnfHQh_7eJPBd8UagtgUmKnOeHbvxIAOShQ=w1366-h768-no">
+                        <div class="overlay">
+                            <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                        </div>
+                    </div>           
+                    <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h3 style="text-align:center;">FOREVER ARCTIC-SEA</h3>
+                          </div>
+                          <div class="modal-body">
+                               <p class="fra">Les matières grasses ou lipides font partie de l’alimentation des êtres humains depuis toujours. S’il existe des graisses qui ne sont pas bonnes pour la santé, certaines sont indispensables à l’organisme. La méconnaissance de cette famille nutritionnelle nous pousse à en consommer de moins en moins et donc à réduire certaines graisses essentielles pour la santé.</p><hr>
+                        <p class="arb">يحقق فوريفر أركتيك سي الجديد والمطور توازناً مثالياً للأحماض الدهنية أوميجا 3 الموجودة في التوليفة الخاصة التي تجمع ما بين زيت السمك الطبيعي و زيت الكالمياري و زيت الزيتون، لتقديم دعم أفضل لنظام القلب والأوعية الدموية و المخ و العينين.<br>
+إن هذه التوليفة الفريدة من نوعها موجودة فقط لدى شركة فوريفر ليفينج و هي لا توفر فقط 33% من حمض الدوكوساهيكسانويك يومياً، بل أيضاً تحقق توازناً مثالياً لحمض الدوكوساهيكسانويك و حمض ايكوسابنتانويك لتحقيق أعلى مستويات الصحة والعافية.<br>
+فوائد الأحماض الدهنية أوميجا 3 :<br>
+تساعد في تقليل مخاطر الاصابة بالأزمات القلبية لأنها تحافظ على مرونة الشرايين.<br>
+تساعد في تنظيم ضربات القلب.<br>
+تساعدك على التخلص من أمراض الأمعاء.<br>
+تساعد في التخلص من حالات الاكتئاب وتعكير المزاج.<br>
+تساعد في تقليل مخاطر ولادة أطفال ناقصي الوزن.<br>
+تساعد في تقليل آلام تصلب المفاصل الصباحي.<br>
+ تساعد في تقليل مخاطر الاصابة بسرطان الثدي.<br>
+تفيد لمن يعانون من الأزمات الربوية.<br>
+تقلل من احتمالات الخرف في الشيخوخة.<br>
+تساعد في زيادة القدرات الاستيعابية للدارسين.<br>
+                            120 حبة في العبوة.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

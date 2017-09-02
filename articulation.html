@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/WogIc0InaB2uKOKAZBrApo6d67Oqzlaxt0BaQOsZ4iGuAH1sgI74kw9kpQwvS98U7keUQNuKhw=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>
+                   
+<div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 style="text-align:center;">FOREVER CALCIUM</h3>
+      </div>
+      <div class="modal-body">
+             <p class="fra">Le Calcium est un sel minéral dont la principale fonction est d’assurer la formation du squelette et des dents, en association avec la vitamine D. Il participe également à un bon fonctionnement nerveux, musculaire et cardiaque. Le corps ne le synthétisant pas, il est essentiel de l’apporter par l’alimentation. Les aliments particulièrement riches en calcium sont les produits laitiers, les graines oléagineuses, les légumes verts et également de nombreux fruits.</p><hr>
+                        <p class="arb">يساعد كالسيوم فوريفير في المحافظة على عظام قوية من خلال تزويد الجسم بكمية الكالسيوم التي يحتاجها يوميا.<br>
+أربعة أقراص كالسيوم فوريفير تحتوي على 1000 ملغ من الكالسيوم أضيف إليها الامتصاص بنسبة 400%، إن تناول حبتين مع الفطور وحبتين مع العشاء يؤمن لك ما يحتاجه جسمك للحفاظ على عظام قوية و الإحساس بالنشاط.<br>
+نادرا ما نتناول الأطعمة الغنية بالكالسيوم مثل منتجات الحليب، فول الصويا، الجوز أو البندق التي تؤمن للجسم ما يحتاجه. كما أن أكثر الأطعمة التي نأكلها قد فقدت الكالسيوم بسبب وسائل التصنيع الحديثة، لذالك يعتبر الكالسيوم و الحديد من أكثر المعادن التي تفتقر إليها الحميات الغذائية التي نتبعها اليوم.<br>
+كالسيوم فوريفير هو معادلة مكثفة و غنية بالكالسيوم لمنح جسدك نسبة 100% من المقدار الغذائي الموصى به.<br>
+90 حبة في العبوة.</p>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+             </div>
+    </div>
+    </div>
+
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

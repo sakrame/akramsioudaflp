@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/9P1H7wD8PCXs8wUX-Kjg-jKyEX8wUYIsApi-tlFvbGR4n0215nSlm8djDsFkXvLvtTy_ERY2fg=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">AVOCADO FACE & BODY</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">Enrichi en beurre d’avocat, le Savon Corps et Visage à l’Avocat nettoie délicatement la peau du visage, des mains et du corps. Il convient à toutes les peaux même les plus sensibles. Hydratant*, il respecte l’équilibre de la peau et laisse un film hydratant* à sa surface. Il permet de garder un épiderme propre et sain. Son léger parfum aux fleurs de citronnier est un véritable plaisir.
+                        <br>Enrichi en beurre d’avocat, le Savon Corps et Visage à l’Avocat nettoie délicatement la peau du visage, des mains et du corps. Il convient à toutes les peaux même les plus sensibles. Hydratant*, il respecte l’équilibre de la peau et laisse un film hydratant* à sa surface. Il permet de garder un épiderme propre et sain. Son léger parfum aux fleurs de citronnier est un véritable plaisir.</p><hr>
+                        <p class="arb">
+                        الجمال الطبيعي يبدأ من البشرة الصحية النظيفة، و البشرة الصحية النظيفة تحصل عليها من الطبيعة، لاكثر من 36 عام تميزت شركة فوريفر ليفينج في صنع منتجات طبيعية تمنح البشرة النعومة والجمال الطبيعي وصابونة الافوكادو للوجه والجسم خير مثال.<br>
+ان هذه الصابونه مصنعة من 100% من زبدة الافوكادو النقية، تتميز زبدة الافوكادو بالقدرة على تنظيف وتنعيم البشرة بصورة طبيعية وهي مناسبة لكل انواع البشرة (الحساسة و الرطبة) ويستمر تأثير الافوكادو على البشرة حتى بعد الانتهاء من الاستحمام ، وسوف تشعر بالفرق الكبير ببشرتك ما بين استخدام هذه الصابونة الطبيعية و استخدام الصابون العادي.
+                        </p>        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/TprSebED5y9aBWYPh34-TW__RoCYDD0vu02nfIcU0_k1-sKIT_xtDEGF2gOfcxq_pRd32z3ZLA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">CREME LAVANTE ALOE</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">La Crème Lavante Aloès purifie la peau en douceur sans l’assécher et assainit l’épiderme tout en respectant son hydratation* et son pH. Sa mousse généreuse, douce et légèrement parfumée apporte une sensation de propreté sans agresser la peau, en maintenant intacte la barrière cutanée protectrice. Formulée pour ne pas irriter les yeux, elle convient à toute la famille, aux enfants et même aux peaux les plus sensibles et délicates. Son pH neutre respecte l’équilibre et la fonction barrière de la peau et ne provoque aucune sensation d’irritation. Biodégradable, elle respecte l’environnement.</p><hr>
+                        <p class="arb">تم تحضير هذا المنتج بتركيبة لا دموع بعد اليوم، لذلك فهو مناسب لجميع افراد الاسرة، كما أنه يرطب و ينظف في آن واحد، الامر الذي يجعل بشرة الوجه ناعمة و رطبة، كما انه ذو رغوة غنية و سهلة الغسل، تترك البشرة نظيفة و ناعمة كالحرير مناسبة و مثالية كشامبو للأطفال لاحتوائها على الرقم الهيدروجيني المتوازن و هو مناسبة جدا لاصحاب البشرة الحساسة.<br>
+صابون الألوة السائل إنه الصابون المثالي الذي يستحق ثقتكم.<br>
+الحجم 473 مل.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/1V8GzS7RYkxBZ7EQAGEfWfyz9JN3SufUgTzI4SGdwz1KKjG9bR9zUbJShelBs2BpibM-zr6qqA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FOREVER ALOE SCRUB</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Grâce aux microsphères de Jojoba et au gel stabilisé d’Aloe vera (31.7 %), ce gommage doux non abrasif est adapté à toutes les peaux. Il permet d’éliminer en douceur les cellules mortes accumulées à la surface de la peau. Il active le renouvellement cellulaire, la peau retrouve son dynamisme, son grain s’affine. Le teint est éclatant et plus frais. Son utilisation régulière aide à réguler la production de sébum des peaux grasses et assainit rapidement les “peaux à problèmes”.</p><hr>
+                        <p class="arb">إذا أردت تنظيف أعمق للبشرة يجب أن تحصل على هذا المنتج لانه مكون من الألوفيرا (جل الصبار) النقية مع زيت الجوجوبا للاستخدام اليومي، حتى انه يمكن استخدامه على بشرة الوجه حيث تعمل هذه المواد على التخلص من خلايا الجلد الميتة و تقوم بتفتيح المسامات لتظهر البشرة جديدة وصحية أكثر.<br>
+تعمل الألوفيرا و الجوجوبا على فتح المسامات و تجديد الخلايا و في نفس الوقت تحمي البشرة من الجفاف، كما يستخدم هذا المنتج ايضا لإزالة الرؤوس السوداء التي تظهر على الوجه.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/UrJn2hNmN8jIZTTF71xuEDNJK7NLgyt3HiSvvUKZcR-gJhH8zB2JZBNiStUIX98GAMB_v7ClzA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_04">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FOREVER MARINE MASK</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">Marine Mask est un masque hydratant* et purifiant qui rétablit l’équilibre naturel de la peau grâce à une association de plantes apaisantes, hydratantes*, adoucissantes et d’extraits d’algues riches en minéraux essentiels qui participent à la revitalisation de l’épiderme. La formule est complétée par un cocktail de vitamines E, C et A qui assurent une protection contre les radicaux libres. Le Marine Mask permet aux peaux fatiguées de retrouver éclat et vitalité. Adoucissant, il maintient l’équilibre cutané, favorise la régénération de l’épiderme et laisse la peau douce. Il permet également d’éliminer les impuretés tout en dynamisant les peaux grasses qui mieux équilibrées, retrouvent fraîcheur et matité.</p><hr>
+                        <p class="arb">
+                        العمل المرهق اليومي قد يجعل بشرتك جافة و يبدو عليها التعب، لذلك فإن الترطيب و التنظيف الجيد للبشره هما الحل لاستعادة نعومة الجلد و نظارته، هذا المنتج الغني بالمعادن البحرية مثل سي كيلب و الطحلب توفر تنظيفا عميقا للبشرة مع عمل حالة توازن لاستعادة الحالة الطبيعية للجلد، إضافة إلى عناصر الترطيب و التكييف الممتازة للآلوفيرا و العسل و مستخرج الجزر وخلاصة الخيار، و هي سهلة الاستخدام وتتغلغل في مسام البشرة.<br>
+فوريفر مارين ماسك يعتبر افضل منتج للتنظيف و الترطيب و تفتيح لون الوجه بعد يوم مرهق و شاق. 
+                        </p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/7CHH4QZy1wpCm-nYJXuhZQdnhNDZauCVrbk23Ig1p6sH0Q73pH8H_lrj00QxmQ8DHWR0p88qUw=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_05">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">MOISTURIZING LOTION</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">La Crème Visage Aloès est une émulsion fluide enrichie en collagène et en élastine, elle contribue à ralentir le vieillissement prématuré de la peau. Avec 36% de gel stabilisé d’Aloe Vera, ce soin assure le maintien d’une hydratation* confortable et protège la surface cutanée de la déshydratation. La Crème Visage Aloès facilite également la régénération épidermique et permet de garder une peau douce et souple. Elle respecte le pH de la peau et aide l’épiderme à se défendre contre les agressions de l’environnement. Sa texture fondante constitue une excellente base de maquillage.</p><hr>
+                        <p class="arb">يمتصه الجلد بسهولة مرطب يحارب علامات الشيخوخة التي يسببها الضغط و التوتر و تلوث الجو، رائع لبشرة الوجه و الجسم معاً و هو مزيج كثيف من جل الألوفيرا النقي و زيت المشمش و زيت الجوجوبا و المرنين لمعالجة البشرة الجافة و تشققات الجلد، رائحته لطيفة و مثالي للأيدي الخشنة و يستخدم تحت الماكياج.<br>
+الآن بوسعك مقاومة الشمس و الهواء و التلوث و حماية بشرتك بفضل لوشن الألوة المرطب من فوريفير.<br>
+إنه أكثر سماكة من لوشن الألوة و يتسرب في عمق البشرة لمقاومة الشيخوخة و يمكن دهنه على الوجه كأساس قبل وضع مستحضرات التجميل لحماية البشرة.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh6.googleusercontent.com/-cIpcGtYjfWs/V5bTiBQdu_I/AAAAAAAAA6Y/OcO1BOwV8pwQrRAuahvkcfPkEdEh97GdACL0B/w335-h320-no/PRIDE.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_06">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">GENTLEMAN'S PRIDE</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">Ce gel-crème est un véritable soin spécifiquement conçu pour la peau des hommes agressée chaque matin par le rasage. Son utilisation quotidienne permet de maintenir l’hydratation* de la peau, ce qui lui confère souplesse et douceur. Il apaise immédiatement les sensations d’inconfort et de brûlures   provoquées par le rasage, hydrate* et protège la surface cutanée. Apaisant et rafraîchissant, il relance les processus naturels de régénération cellulaire et laisse la peau douce et souple. Sans alcool, il n’agresse pas et n’irrite pas la peau.</p><hr>
+                        <p class="arb">مزيج خاص من الزيوت و المرطبات ممزوجة بجل الصبار النقي، عطر للرجال يستخدم بعد عملية الحلاقة أو كمرطب للبشرة في أي وقت، خال من الكحول مصنوع من مواد عطرية طبيعية و من البابونج لشعور لطيف و لا يترك البشرة جافة، يمنع حدوث أية التهابات بعد الحلاقة و يساعد على تجديد خلايا البشرة.<br>
+سيعشق الرجال هذا البلسم لأنه يترك الوجه منتعشاً نظيفاً و ناعماً(استنادا إلى آراء المستهلكين فإن النساء تعشقن رائحته أيضاً).<br>
+الحجم 118 مل.</p>        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/zMNitXZn_Pc58MbVCjWl4QN8tPZcJuBj-ftxF_CYw5lyWtvUD-y5GIyIqpWMSzoqxajVAKVWvA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_07">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">SERUM ALPHA-E FACTOR</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">L’Alpha-E Factor est un véritable bouclier anti-âge. Son association de vitamines anti-oxydantes A, E et C protège la peau et l’aide à combattre les radicaux libres, principaux responsables du vieillissement cutané. Les extraits végétaux, de graines de bourrache, d’aloès, de camomille et de soja normalisent le fonctionnement de l’épiderme et relance sa régénération. La peau retrouve rapidement sa souplesse et sa douceur avec un grain affiné.</p><hr>
+                        <p class="arb">ستتمنى لو أنك وضعته على بشرتك منذ زمن بعيد، فهو سائل حفيف و غني بمواد فعالة بدئاً من جل الألوفيرا المستقر و المقوي بالفيتامينات و زيت و مواد أخرى فعالة لحماية البشرة ضد عوامل الطبيعة و تشققات البشرة و هو مضاد لعوامل التأكسد. لا يشبه أي مستحضر قمت باستخدامه من قبل فهو يعزز الليونة و يجعل البشرة الحساسة و الأكثر جفافاً طبيعية. يقلل من التجاعيد و يحتوي على مواد معقمة طبيعية تحافظ على البشرة نظيفة و محمية.<br>
+فوريفير ألفا – إي فاكتور مزيج خارق من المكونات التي تكمل منافع المكمل الغذائي " أ – بيتا للعناية " من فوريفير المقاوم للتأكسد.<br>
+الحجم 30 مل.</p>        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/TlTKz5aAPOptZMnaF0cyPmJDagiegj4Ya7IRROVxv7pNpmzPuysfV5vTHiKmcmQtk-YgILQesg=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_08">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FOREVER R3 FACTOR</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">
+                            Cette crème répare, renouvelle et repulpe l’épiderme.<br>
+                            Grâce aux acides de fruits, elle favorise l’élimination des cellules mortes qui s’accumulent à la surface de la peau et la rendent terne. Elle estompe les rides et les ridules et affine le grain de la peau. Elle restaure sa capacité de résistance, sa souplesse et sa luminosité. Sa forte teneur en gel d’aloès hydrate* l’épiderme et lui rend toute sa douceur. La peau paraît plus jeune et le teint resplendit d’un nouvel éclat.
+                        </p><hr>
+                        <p class="arb">كريم إر 3 فاكترو يساعد بشرتك على الاحتفاظ برطوبتها الطبيعية وعلى استعادة مرونتها و تجديد مظهرها، حيث انه يحتوي على مزيج غني من جل الالوفيرا المستقر و الكولاجين القابل للذوبان و أحماض ألفا هيدروكسي والفيتامينات (إيه) و (إي) الضرورية جدا لصحة البشرة.<br>
+أحماض ألفا هيدروكسي تأتي من المصادر النباتية الطبيعية وتسمى أيضا أحماض الفاكهة. تساعد هذه الاحماض فى القضاء على الخلايا الميتة من سطح الجلد عن طريق إذابة مواد الغراء الطبيعية في الجسم التي تلصق خلايا الجلد الميتة. هذه الخلايا تخلق حاجزا أمام كريمات ترطيب، لذا التخلص من هذه الخلايا الميتة يعني حث الجسم على انتاج خلايا جلد جديدة، بما ان عملية تجديد الجلد تستغرق من 21 الى 28 يوماً، فلا بد من الاستمرار في استخدام إر 3 لمدة مماثلة للحصول على افضل النتائج.<br>
+كريم إر 3 فاكتور يعتبر كريماً مثالياً للمساعدة على ازالة التجاعيد عند زاويتي العينين الخارجيتين.
+</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/TO-17zBu8CYvOvseZhBzjUEJM-AWjRwCw1olJMrcWLtddBdrnBVhKa_hb4nDqpArGUnzt-e2oA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_09">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_09" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE LIPS</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">L’association de gel d’Aloe Vera stabilisé, de Jojoba et de cires naturelles (abeille, candelilla, carnauba) confère au Stick Aloe Lèvres des fonctions protectrices, hydratantes* et réparatrices pour les lèvres même les plus abîmées qui retrouvent confort et souplesse. Il contribue à maintenir une bonne nutrition des lèvres qui restent souples et belles.</p><hr>
+                        <p class="arb">امتزجت جل الصبار و الجوجوبا و شمع النحل لتخلق أجمل كريم معطر و مطري للشفاه لكل الفصول، فلو كانت شفاهك تتكلم فسوف تطلب (شفاه الألوفيرا) يرطب ويعالج الشفاه الجافة و المتشققة. يحافظ على الشفاه رطبة نظيفة وصحية يحميها حتى لو كانت تسبح بين الأمواج أو كنت في الحديقة، حجمه الصغير يجعل حمله باليد سهلاً و استخرامه في كل الأوقات.<br>
+ألو لبس مرطب الشفاه بالصبار يمنح الشفاه بريقا و رونقا رائعا، كما يحميهم من الحر و البرد، و يعتبر واق و مداوي و مسكن لتورم الشفاه.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/QXmx3fTPl4SNaB8DIYTT2yx91PApGH6z08MM-IowGvGsV1Ukt00ez2sBE8mylDAKMG4XptPogg=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_10">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FOREVER ALLURING EYES</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">La Crème Contour des Yeux est un soin revitalisant, sa texture fine et délicate enrichie en gel d’Aloe Vera, en agents émollients végétaux, hydrate* et prévient l’apparition des rides. Contenant du bisabolol, elle est apaisante et atténue les poches et les cernes. Elle renforce la souplesse et l’élasticité de la peau dans cette zone délicate et fragile du contour des yeux. Dès son application, la peau est lissée, jour après jour, le contour de l’œil se raffermit. Le regard devient rayonnant de jeunesse et de vitalité.</p><hr>
+                        <p class="arb">يستخدم هذا الكريم للحصول على عيون مرتاحة و فاتنة و لتقليل ظهور التجاعيد و الخطوط الدقيقة تحت العينين، كما يستخدم لانتفاخ العيون و للمساحات الداكنة، كما يقوم في نفس الوقت بتغذية و ترطيب الجلد. إن كريم أللورينج أيز غني بجل الألوفيرا وبالمكونات الطبيعية والمستخلصة من جوز الهند و زيت الجوجوبا و فيتامين إي.<br>
+الآن أصبح بإمكانكم مع هذا الكريم التخفيف من التجاعيد و الخطوط و الهالات السوداء تحت العينين، إنه ملطف و مرطب و مغذي لمحيط العين ليعيد له الصفاء و الجمال.<br>
+يحتوي على مكونات مقاومة للالتهاب و تخفف من انتفاخ الراجع للحساسية و التعب و الارهاق.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/xhUVZi5vPXFqapgxxUZGMmx8Ka6uoVhVoRGbenBm28Wtg2PI9Q3vYgPafTrsdQ9IkxKdGfhh3Q=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_11">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FOREVER EPIBLANC</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Forver Epiblanc est spécialement conçu pour unifier le teint et pour freiner l’apparition des taches pigmentaires liées à la surexposition solaire ou au dérèglement hormonal de la grossesse. Grâce au complexe dépigmentant à base d’Arbutine et de rumex, la crème Epiblanc favorise l’élimination des cellules épidermiques de surface qui sont gorgées de mélanine accumulée, et réduit la production de mélanine produite par les cellules pigmentaires. Ainsi elle contribue à estomper les taches brunes. Enrichie de 42% de gel d’Aloe Vera stabilisé, elle hydrate* et stimule la régénération tissulaire.</p><hr>
+                        <p class="arb">يحلم الغالبية منا أن يكون جلدهم ناعما و صافيا لكن حياتنا المليئة بالمشاغل و تعرضنا للعوامل الطبيعية و غيرها يؤدى إلى ظهور النقط و الشوائب.<br>
+إن تركيبة هذا الكريم قد صممت خصيصا لتلميع الجلد و المساعدة على إزالة البقع الداكنة (الكلف) و تعتبر هذه المادة الأكثر فعالية عندما يتم استخدامها مباشرة على الشوائب أو البقع فوق الجلد، وقد تم اضافة فيتامين (إي) لهذا الكريم مما يجعله فعال جدا في ازالة البقع الداكنة التي تظهر على البشرة.<br>
+فوريفير إيبيبلانك هو القاضي على البقع الداكنة على الجلد مثل الكلف و النمش. للحصول على أفضل النتائج يمكن استخدام كريم فوريفر صن سكرين مع كريم إبيبلانك.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

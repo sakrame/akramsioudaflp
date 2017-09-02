@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/cbB1SaP77wxlBo-kL3ws6SAdvoREBpdNoa5hjB2x2ngSSv2rLBaVZa0rJVpDk2te4LbOLyAC5g=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">RELAXATION SHOWER GEL</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Formulé à base d’Aloe Vera et d’huiles essentielles, ce gel douche est une invitation à      la relaxation. Il purifie la peau et l’esprit tout en laissant la peau douce, bien hydratée* et       agréablement parfumée.<br>
+                            Hydratant* : Il ne dessèche pas la peau et la protège des effets agressifs de l’eau.<br>
+                            Apaisant et relaxant : agréablement parfumé et enrichi d’huiles essentielles relaxantes, il laisse une très légère empreinte parfumée sur la peau.</p><hr>
+                        <p class="arb">من خلال استخدامك شاور جل الاسترخاء من  فوريفر، فأنت تجمع ما بين العناية بالبشرة و الاستحمام في آن واحد
+يتكون ريلاكسينج شاور جل الصبار ذو الخواص الرائعة على ترطيب البشرة،  بالإضافة إلى الزيوت العطرية ومستخلصات الفاكهة، بما في ذلك الخزامى و البرغموت (فاكهة حمضية استوائية) و البرتقال و الخيار
+سوف تعشق تجربة الاستحمام بعد استخدام هذا المنتج الرائع و ستعشق نعومة بشرتك و الاسترخاء و الراحة التي ستشعر بها، ان الاستمتاع بالاستحمام بهذا المنتج هو الطريقة المثلى لبدء أو انهاء يومك.</p>     
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/H3LiQ2AeHbFCjYiwXo84ZkAdK4Lc9Jb529pD0jeA8h9xb05ZNrroy_M0qlFgZz_hie1WD5pC2Q=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">RELAXATION MASSAGE LOTION</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Le Soin Nutri-Relaxant associe les qualités réconfortantes et adoucissantes du gel d’Aloe Vera, des huiles essentielles, du thé blanc et des extraits de fruits. L’application du Soin Nutri-Relaxant procure immédiatement une sensation de détente et de bien être. Le corps et l’esprit sont relaxés. La peau est parfaitement nourrie et hydratée grâce aux céramides naturelles. Le modelage avec ce soin complète un bain avec les Sels de Bain Relaxants ou une douche avec le Gel de Douche Relaxant.</p><hr>
+                        <p class="arb">الجميع يحب  و يتمتع بالحصول على المساج بعد يوم  متعب وشاق. لكن ما هو اللوشن الذي  يمكن أن يعطيك افضل شعور بالاسترخاء و الراحة؟
+جرب لوشن الاسترخاء للمساج من فوريفر وسوف تشعر بالفرق.<br>
+استطاعت فوريفر ليفينج الجمع بين جل الصبار و الزيوت الأساسية من زهر البرتقال و من فاكهة البرغموت، جنبا إلى جنب مع مستخلص الخيار و الشاي الأبيض لخلق لوشن مساج يطري الجلد و يعطره و في نفس الوقت غير دهني، و نظرا لفوائد الصبار في تهدئة و تكييف الجلد، فإن لوشن مساج للإسترخاء مثالي بعد الاستحمام باستخدامه مع أملاح البحر الميت للاسترخاء أو جل الاسترخاء للاستحمام من فوريفر لوشن.<br> 
+فوريفر للاسترخاء هوالأمثل لإنهاء يومك الحافل بالتعب و الارهاق.</p>     
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/r68KbEjgmASeGrdGUlN7leWuuHVIjnWTOBMQ76vwH39rhaQC-yYup87Ywny_ptpwU_VF0T4c2Q=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE BATH GELEE</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">
+                            La Gelée de Bain Minceur Aloès, associant 36% de gel d’Aloe Vera stabilisé à des extraits d’algues et de plantes, procure une agréable sensation de bien-être. Elle active la circulation sanguine (utilisée en friction avec son gant Luffa) et permet de réduire l’aspect peau d’orange associé à la cellulite. La peau est plus ferme et tonique.<br>
+                            Amincissante et lissante, elle prévient l’apparition de la cellulite et élimine les peaux mortes avec l’utilisation d’un gant Luffa, lisse la peau et permet de réduire l’aspect peau d’orange.<br>
+                            Tonifiante, elle active la micro circulation et procure une sensation de peau plus tonique et plus ferme. 
+                        </p><hr>
+                        <p class="arb">لن تصدق مدى الإحساس برقة و نعومة بشرتك سواء كان يومك يحتاج للحمام المنعش أو مجرد الارستخاء في حوض الحمام. هذا الجل المرطب للحمام من جل الالوفيرا الغني يتغلغل في البشرة و يرطب كافة أجزائها الجافة. استعماله مع لوفا ميت الخاص بنا فإنه يساعد على إزالة خلايا الجلد الميتة ما يعطيك بشرة نظيفة و سليمة. مكون من خلطة خاصة من المستحضرات العشبية لإنعاش الدورة الدموية ليبعث الارتياح للسيقان المتعبة و المرهقة.<br>
+ألو باث جل سائل الاستحمام بالألوه لا يدلل الجسم فحسب، بل يمنح أيضاً إحساساً لا يضاهى بالاسترخاء و النظافة و الانتعاش.</p>     
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/ByJ3-L2jmXdCGalpDKgVUpsa5FltZuuddSZNzNOz_8W7st-DNzQCxdXU_X47hdv7UTEAVkLk8Q=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_0">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE BODY CONDITIONING</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Riche en extraits de plantes associées au gel stabilisé d’Aloe Vera, la Crème Corps Tonus stimule la circulation cutanée, afin de réduire l’engorgement des tissus souvent responsable du manque de fermeté et de la formation de capitons, elle participe à l’élimination des lipides stockés et permet de lutter contre les surcharges disgracieuses de la silhouette.</p><hr>
+                        <p class="arb">يحافظ على ليونة و رطوبة البشرة تم تغطيتها للتو (للتنحيف) ينظف و يريح البشرة و هو كريم كثيف و غني بخلاصة الأعشاب الأوروبية و المرطبات، يستخدم مباشرة بعد استخدام كريم التنحيف للتدليك و هو أيضا يجعل البشرة دافئة و ينشط الدورة الدموية و يعطى شعورا بالراحة لكل الجسم.<br>
+هو الحل لمن يريد الإحساس بجسد لين و ناعم.<br>
+ملاحظة : هذا المنتج احد مكونات مجموعة شد ترهلات الجسم بالألوه ألو بودي تونيج كيت.</p>     
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/lZSzOjwol5tQAEm4T48zHENLvVj_pqqmXyKKhBetqvGp-c1q_ucO2O8l85v-YVeHuHhtHWxWxQ=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_05">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE BODY TONING KIT</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">aites-vous plaisir avec notre coffret exclusif tonifiant pour le corps ! Ce programme est conçu pour tonifier, raffermir et hydrater votre corps.<br>
+                        L’association de la Gelée de Bain Aloès pour la détente, de la Crème Modelante et de la Crème Corps Tonus permet une action optimale pour raffermir et densifier les tissus.</p><hr>
+                        <p class="arb">صممت هذه المجموعة من المنتجات لتشد الجسم و لتخلصه من الوزن الزائد بينما تقلل من ظهور آثار التنحيف و التخلص من الخلايا الدهنية لتعطي الجسم شكلا نحيفا. مركب من الالوفيرا و مجموعة من الأعشاب الأوروبية المفيدة للبشرة و من مواد ترفع حرارة الجسم فتؤثر في الدورة الدموية و تنظف البشرة لتساعد على التخلص من السوائل الزائدة المخزنة تحتوى هذه المجموعة على الألوفيرا (المنحف) و هو عبارة عن الالوفيرا جيل المثبت بنسبة 100% و الذي يقوم بتدفئة خلايا البشرة تدفئة عميقة. المرطب الذي يدخل إلى داخل البشرة و هو (كريم ألو بودي كونديشنر) الذي يستخدم بعد عملية التنحيف مباشرة فهذا الجيل المنعش للجسم و ذو القدرة الفائقة على الترطيب متوفر بشكل علبة تضم المجموعة كاملة أو مجزأة إنها طريقة رائعة لتشعر بالراحة من الداخل ومن الخارج.</p>      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

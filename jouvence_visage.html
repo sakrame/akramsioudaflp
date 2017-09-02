@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/rC4tZNuRMh58ptHSQZSU8s7LdvotGa14flPG4rWdJILCswAG7Hfp78ymIr6WrbY2_t_G0GDi6g=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE REHYDRATING TONER</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">La Lotion Fraîche revitalise le teint et complète efficacement le démaquillage. Hydratante*, elle redonne fraîcheur et éclat au teint. Tonifiante, elle procure une agréable sensation de bien-être. Le teint est lumineux.</p><hr>
+                        <p class="arb">ريهايريتنج تونر هو عبارة عن تركيبة  ناعمة غير قابلة للجفاف و خالية من الكحول تتناغم مع بشرتك كونه يغطيها و يمنحها الرطوبة. مزيج من جل الالوفيرا المستقر مع زيت اللوز و مواد مرطبة طبيعية و مستخلصات من الأعشاب و الكولاجين و الانتوين يستخدم للتخلص من آثار المنظفات و الزيوت و الخلايا الميتة.<br> 
+                        الملطف المطري يمنحك بشرة منتعشة و نظيفة و ناعمة و متوازنة و حيوية، إنه مزيج رائع و لطيف لإزالة الأوساخ و الترسبات و الخلايا الميتة.</p>   
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/_ewkmTfX_O9YlNokXMXGM33EiJwQU_dNsMRjHnjGTNZk0UooRxnPA7AcBoEhM-bbQ6JqEm3TDQ=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE FIRMING DAY LOTION</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">La texture fondante et riche en Aloe Vera du Soin Fermeté Jour Aloe Fleur de Jouvence hydrate* et repulpe intensément votre peau pour un effet jeunesse immédiat. Souple et douce, la peau retrouve éclat, transparence et luminosité. Les constituants naturels de l’Aloe Vera agissent en synergie pour améliorer l’oxygénation cutanée, unifier le teint et apporter éclat et luminosité à la peau.
+                        </p><hr>
+                        <p class="arb">هذا الكريم صنع خصيصاً ليمنحك الحماية خلال ساعات النهار من جميع عوامل الطبيعة، و بالتالي يقلل من ظهور علامات الشيخوخة عن طريق الترطيب و التغذية الدائمة للجلد، بحيث تظل بشرتك نضره و رائعة طوال ساعات النهار الطويلة، كما انه يحميكي من مشاكل البشرة التي قد تنتج عن الاستخدام الدائم لمستحضرات التجميل.<br>
+يحتوي هذا الكريم على جل الألوفيرا (الصبار) الطبيعي و الكولاجين و المغذيات و المرطبات الخاصة التي لا غنى عنها للمحافظة على شباب البشرة الدائم، كما يحتوي على الفيتامينات اللازمة لتغذية البشرة مثل فيتامين إي وسي ، كل هذه المكونات مجتمعة تساعد فى الحفاظ على نضارة و جمال الجلد قدر الإمكان.</p>   
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-YA0jCqfqkDM/V5MSWlzAFQI/AAAAAAAAAvY/aoz1Vu7g_o8snNJAt1yzlL_nUf2hv995A/w335-h320-p/NIGHT.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE RECOVERING NIGHT</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">La Crème Ressourçante Nuit est un soin qui permet à la peau de récupérer pendant la nuit et qui efface toute trace de fatigue. Sa texture veloutée et crémeuse apporte hydratation* et confort aux peaux les plus ternes. Au réveil la peau est vivifiée, fraîchement reposée, les traits défroissés. Les rides, repulpées, sont comme lissées, le teint est frais et sublime. Les constituants naturels de l’Aloe Vera agissent en synergie pour améliorer l’oxygénation cutanée, unifier le teint et apporter éclat et luminosité à la peau.
+                        </p><hr>
+                        <p class="arb">غني بالفيتامينات يستخدم ككريم ليلي للتقليل من التجاعيد حتى الدقيقة منها، يجعل البشرة أكثر شبابا و ينعشها ليعيد لها حيويتها بإعطائها الرطوبة و الليونة اللازمة، يحتوي هذا الكريم على مواد مستخلصة من القمح الطبيعي و من زيت المشمش و الجوجوبا المعادلة بالماء و الكولاجين القابلة للذوبان التي تخفف من ظهور الخطوط الدقيقة، يستخدم على الوجه بأكمله ليلاً.</p>   
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/2G9S8q84Sm_YC5g4UTI3IZR0HLLiXvYrzYTa3T9LIGpcCiAwpckVgPNZyiJFXaawu81gi8I2cg=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_04">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE ACTIVATOR</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">
+                            Utilisé seul tel un « concentré d’hydratation*», il permet un apaisement cutané immédiat pour les peaux les plus abîmées en leur procurant une hydratation* maximale. En compresses, il hydrate*, apaise le contour des yeux, donnant une nouvelle vivacité et jeunesse au regard.
+                            Pour un teint frais et revitalisé, l’utiliser avec le Masque Poudre Visage.
+                        </p><hr>
+                        <p class="arb">مرطب فريد من نوعه و منظف للبشرة، مركب من جل الألوفيرا المستقر مع الانتوين، و قد أظهرت الدراسات بأن هذه المادة تساعد على تجديد الخلايا لاحتوائها على الأنزيمات و الأحماض الأمينية.<br>
+كما يستخدم هذا المنتج لمعالجة الإصابات الرياضية البسيطة لمنع الالتهابات و للشعور السريع بالراحة.<br>
+يمكن استخدام هذا المنتج كسائل للغرغرة أو كغسول للعينين أو كقطرة للأذنين أو رذاذ للأنف يتم مزجه بالماء بنسبة 1 الى 1. 
+</p>    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/-JeDnk5EVOEk/V5MSiBlqDLI/AAAAAAAAAuo/3UkKWcnPV9kxsZu2ZyV5CSfWRUy-k3wuw/w335-h320-p/MASK%2BPOWDER.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_05">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FIRMING DAY MASK POWDER</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">Mélangé à l’Activateur Aloès, le Masque Poudre Visage est une combinaison unique d’actifs détoxifiants et purifiants qui permet à votre peau de retrouver tout son éclat. Grâce aux actifs absorbants, il élimine les impuretés et les cellules mortes, et nettoie parfaitement la peau. La poudre de maïs stimule le renouvellement cellulaire et affine le grain de peau. La peau bien hydratée*, vivifiée et ré-oxygénée retrouve tout son éclat.
+                        </p><hr>
+                        <p class="arb">قناع البودرة من فوريفر ليفينج هو مزيج فريد من المكونات الغنية تم اختيارها بعناية لخصائصها الخاصة بتلطيف البشرة و تطهير مسام الجلد.
+هذا المنتج مصمم ليمتزج تماما مع الألوة المنشط (ألو أكتيفيتر) لإنشاء قناع رقيق و وضعه على الوجه و الرقبة. زلال و نشا الذرة يوفران اللازم لرسم و شد الجلد، في حين الكاولين يمتص الزيوت الزائدة، كما ان مادة آلانتوين و البابونج تساعدان على تكييف و تجديد شباب الجلد.
+ملاحظة : يجب استخدام هذا المنتج مع سائل الألوه النشط (ألو أكتيفيتور) ليتم مزجه به و عمل قناع البودرة.</p>   
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/AFIIGz6sfaizMr2-rcJBQ7qYVR2Us4IWDfldV7GiSY0YYlYVU0ib4l6lGQKUP79O9gLxr3sHNA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_06">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE NOURISHING SERUM</h3>
+                  </div>
+                  <div class="modal-body">
+                      <p class="fra">Ce merveilleux sérum au thé blanc préserve et restaure l’hydratation de la peau pour qu’elle retrouve son éclat de jeunesse. Grâce à sa formule ultra-légère, ce sérum est très facile à appliquer. L’Aloe Nourishing Serum contient de l’extrait de mimosa qui a un effet apaisant sur la peau. Ainsi, le produit convient particulièrement aux peaux sensibles. Il constitue une base parfaite pour l’Aloe Balancing Cream de Sonya. 
+                        </p><hr>
+                        <p class="arb">سونيا ألو رفرشينغ تونر مع خلاصة الشاي الأبيض و الخيار توفر الرطوبة و الحيوية للمساعدة على إبقاء بشرتك رطبة بصورة دائمة.<br>
+هذا التونر خال من الكحول و منعش كما هو مرطب لبشرتك. يتم استخدامه بعد تنظيف البشرة بسونيا ألو بوريفيينغ كلينزر و سونيا ديب كلينزيج أكسفوليتور، سوف تمتص بشرتك على الفور جميع الخواص المغذية من جل الصبار النقي و خلاصة الشاي الأبيض والخيار.</p>  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

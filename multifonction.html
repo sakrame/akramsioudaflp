@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/U0A6T4-u5ICxfz6HEwUEAUl3q2HYKqgKfWTOFPLVE-kAjtGR39i2_tpj4ql8iaFaVYdGxiSCoQ=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE FIRST</h3>
+                  </div>
+                  <div class="modal-body">
+                         <p class="fra">La brume légère d’Aloe First hydratante* et apaisante, au pH équilibré permet une hydratation* immédiate réconfortante. Elle calme les irritations et les petites lésions superficielles. Elle contribue quotidiennement au confort des peaux sensibles et sensibilisées.c<br>
+Hydratante : sa base de gel stabilisé d’Aloe Vera et son pH neutre sont parfaitement adaptés à l’hydratation* des peaux sensibles, même celles des enfants. La brume Aloe First s’utilise également en soin capillaire apaisant. Elle renforce la protection des cheveux et du cuir chevelu.<br>
+Apaisante et adoucissante : calme les épidermes sensibles ou sensibilisés, spécialement recommandée pour atténuer les sensations d’inconfort liées à une exposition prolongée au soleil, au vent ou au froid. Apaise la peau après une épilation à la cire.<br>
+Réparatrice : son complexe multi-plantes, enrichi de propolis et d’allantoïne, contribue à une réparation optimale des peaux irritées et superficiellement lésées.<br>
+Protectrice : protège la peau et les cheveux de la déshydratation, procure une première ligne de défense contre les petites irritations cutanées.</p><hr>
+                        <p class="arb">يجب على كل مجموعة إسعافات أن لا تخلو من ألو فيرست، بدئاً بالمطبخ وصولا للحمام عليك أن تصطحبه معك عند الذهاب إلى التخييم أو إلى شاطئ البحر ليحمي الاضطرابات التي تحدث للجلد كالتقشر والحكة (لأقسام الجسم العارية خاصة) فهو يتكون من مادة أساسية هي جيل الالوفيرا المستقر كما يحتوي على مادة (البروبوليس) المسماة بالعكبر (الموجودة في خلايا العسل) والتي تعمل كمادة معقمة طبيعية لحماية الجلد كما أن هذا المستحضر يحتوي على إحدى عشرة مادة مستخلصة من النباتات لترطيب البشرة، سهل الاستخدام حتى عندما تكون ملامسة الجلد مؤلمة، متوازن الـ (بي إتش) ليعمل على الشعور بالراحة و تسكين و تهدئة أشد حالات الجلد الحساسة كما يستخدم لحماية الشعر من ضرر الكلور و يستخدم كمرطب لبشرة القدمين بعد إزالة الشعر بالشمع.<br>
+الحجم 473 مل.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/TrJjy9wd0f0urVV_OAkJMKWbfc6MHW7U7T6nFdTqtevlcBiRkVLZU_qKCe_leRyUc5Q4e39sOA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE PROPOLIS CREME</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">Formulé à partir de mucilage extrait du cœur de la feuille d’Aloès et enrichi en Propolis, vitamines et extraits de plantes sélectionnées (camomille, consoude…), ce soin assure une bonne protection de la peau et l’aide à lutter efficacement contre les micro-organismes. Il hydrate* les peaux sèches et sensibles et favorise le maintien de la fonction barrière cutanée. Apaisant, il calme les sensations d’irritation et de démangeaisons.<br>
+Anti-bactérien, il favorise la lutte contre les agents microbiens.<br>
+Protecteur, il renforce la barrière protectrice cutanée.<br>
+Hydratant* : il hydrate et prévient la déshydratation.</p><hr>
+                        <p class="arb">عندما تحتاج إلى أكثر من مجرد مرطب: أحصل على مزيج كثيف من مادة الألوفيرا المثبتة ومن مادة العكبر أو دنج النحل (الموجود في خلايا النحل التي ينتجها ليحافظ على خلاياه نظيفة و معقمة) مع اضافة مادة البابونج التي تعتبر أفضل أنواع الأعشاب الطبيعية للعناية بالبشرة، بالإضافة إلى فيتامين (ايه) و فيتامين (إي) كافية للحفاظ على بشرة صحية من الرأس حتى القدمين، تمنع حدوث الآفات الجلدية و تعمل على إيجاد طبقة عازلة حامية للجلد و حاجز إضافي للدفاع عن الجسم.br>
+مفيد لمعظم مشاكل البشرة و خاصة حب الشباب و يعتبر مرهم مناسب لإلتهاب البواسير.</p>       
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/jwdKCXUMAKpa3tgjeiLAZDhGwEz3prYvqs5zRNyR717BGOkI1IbEgs0qe6zCOLlyJBaxpWOnYA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">ALOE VERRA GELLY</h3>
+                  </div>
+                  <div class="modal-body">
+                            <p class="fra">Avec 84.46 % de gel naturel d’Aloès, la Gelée Aloès est un bain de confort pour toutes les peaux, qu’elles soient normales, grasses ou sèches, très sèches et déshydratées. Extrêmement proche du précieux mucilage de la plante, la gelée bénéficie de toutes ses propriétés apaisantes, réparatrices et hydratantes. Son pH 5,5 doux et équilibrant est parfaitement toléré par toutes les peaux, même les plus sensibles.</p><hr>
+                        <p class="arb">كريم ألوفيرا جيلي هو منتج نقي 100% ومثبت من جيل الصبار، كما لو قمت بعصره من الأوراق بنفسك للتو. يؤمن فوائد لا تعد و لا تحصى لبشرتك. يستخدم لجميع الحالات من الحروق البسيطة و حروق الشمس و التشققات و كل اضطرابات الجلد. هذا السائل الشفاف و الكثيف سهل إمتصاصه من قبل الجلد و يحتوي على مواد مرطبة و منعمة تقوم بترطيب الجلد بشكل رائع حيث أنها تنزلق و تنساب برقة على الجلد. تقوم المواد الناعمة بمعالجة الأنسجة الحساسة بأمان بينما تقوم المركبات المطهرة بالمحافظة على الجلد نظيفاً و تخفف من فرص الالتهابات. يجب أن لا يخلو كل مطبخ وحمام أو سيارة منه.<br>
+يساعد على علاج الكثير من مشاكل البشرة والالتهابات الجلدية مثل حب الشباب و الأكزيما و الصدفية و الحروق.<br>
+الحجم 118 مل.</p>     
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

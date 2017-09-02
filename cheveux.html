@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <!--scrolling animation-->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom:2px solid white;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand cat_brand" href="catalogue.html" style="color: white;">AKRAM SIOUDA FLP</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="index.html"><span style="font-size:16px;font-family: 'Cairo', sans-serif;">الرئيسية <i class="fa fa-home"></i></span></a></li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS BEAUTE</span><span class="caret"></span></a>
+          <ul class="dropdown-menu" style="min-width: 300px;">
+              <a href="bien-etre.html"><li>Bien-être</li></a>         
+              <a href="stimulation.html"><li>Stimulation des défenses naturelles</li></a>
+              <a href="enfants.html"><li>Enfants</li></a>     
+              <a href="digestion.html"><li>Digestion</li></a>    
+              <a href="tonus.html"><li>Tonus et vitalité</li></a>     
+              <a href="articulation.html"><li>Articulation-Os</li></a>    
+              <a href="programme.html"><li>Les programmes</li></a>
+              <a href="coeur-circulation.html"><li>Coeur/Circulation Equilibre Masculin</li></a>
+          </ul>
+        </li>
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">PRODUITS FORME</span><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <a href="multifonction.html"><li>Les multifonction</li></a>         
+              <a href="visage.html"><li>Visage</li></a>
+              <a href="corps.html"><li>Corps</li></a>     
+              <a href="cheveux.html"><li>Cheveux</li></a>    
+              <a href="hygienne.html"><li>Hygiene</li></a>     
+              <a href="mobilite.html"><li>Mobilité</li></a>     
+              <a href="solaire.html"><li>Solaires</li></a>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:16px;">FLEUR DE JOUVENCE</span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <a href="jouvence_visage.html"><li>Visage</li></a>          
+                <a href="jouvence_cheveux.html"><li>Cheveux</li></a>
+                <a href="jouvence_maquillage.html"><li>Maquillage Flawless</li></a>     
+                <a href="jouvence_parfum.html"><li>Les Parfums</li></a>    
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a href="maison.html"><span style="font-size:16px;cursor:pointer">MAISON</span></a>
+          </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div id="effect-5" class="effects clearfix">
+    <div class="container" style="margin-top:70px;margin-bottom:70px;">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/I1A9SiWe2y2F1m28E8ztnYOSm7wnfT1LVL_K1uEzZUBLd3pe-gn2l9yqnakBILwjmNCrnpz8LA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">SHAMPOING ALOE-JOJOBA</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Formulé pour laver le cuir chevelu et les cheveux en douceur, le Shampoing Aloe-Jojoba redonne souplesse et brillance à la chevelure. Grâce à son pH équilibré, il respecte le pH du cuir chevelu et des cheveux, assainit la chevelure et le cuir chevelu sans agresser, ni dessécher. Il convient donc à toute la famille, même en usage quotidien. Enrichi en huile de Jojoba associée au gel d’Aloe Vera, il protège de la déshydratation et renforce la protection du cheveu. Il n’irrite pas les yeux et convient parfaitement aux enfants. 
+                        Réparateur, il lisse les écailles de la cuticule et renforce la brillance du cheveu.
+                        </p><hr>
+                        <p class="arb">
+                        لشعر ناعم و لامع و سهل التسريح، استخدم التركيبة المتوازنة في البي إتش (الرقم الهيدوجيني) المكونة من الألوفيرا النقية، مثالية للحصول على شعر صحي و هو مفيد لفروة الرأس و جذور الشعر كما تساعد الأنزيمات المنشطة على التخلص من الخلايا الميتة و تجديد النسيج، لطيف ومركز و يدوم طويلاً و هو مناسب لكل أنواع الشعر.<br>
+إن شامبو ألو جوجوبا مصنع من مواد طبيعية ومهمته الاساسية تغذية الشعر وتخليصه من الكيماويات التي سبق و ان استخدمت عليه لذلك لا تحكم عليه من اول استخدام بل واظبي على استخدامه لمدة ما بين اسبوعين الى 3 اسابيع على الاقل لتشعري بالفرق. تتوقف المدة على مدى حجم المستحضرات الكيمائية التي استخدمت من قبل، كما انه يساعد على إزالة البقع الناجمة عن القشرة و يخلص فروة الرأس من الإحساس بالحكة و يساهم في إعادة النداوة المتوازنة.<br>
+ملاحظة: ننصح بإستخدامه مع بلسم ألو جوجوبا للحصول على شعر صحي وسليم وفي نفس الوقت لامع و براق وسهل التصفيف.
+                        </p>        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/KTgDa6lnCt_MbfCoMbtPiXCrFIwlnXAyyS0dXOGlN73oK9o9ivrKf39IFcCc18Sq5trz8JTniQ=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">JOJOBA CONDITIONING RINSE</h3>
+                  </div>
+                  <div class="modal-body">
+                        <p class="fra">
+                        L’Après-Shampoing Aloe-Jojoba hydrate et restructure en profondeur le cheveu grâce aux huiles de macadamia et de jojoba. Enrichi en Provitamine B5 et en protéines de blé, il lisse la surface des cheveux jusqu’aux pointes. Les cheveux sont doux, souples et faciles à coiffer. Délicatement parfumé, il laisse sur la chevelure une sensation de propreté durable.<br>
+                        Hydratant*, il forme un film protecteur, permet d’éviter la déshydratation. Les cheveux restent souples et soyeux.<br>
+                        Réparateur, il comble les vides entre les écailles et restructure la fibre capillaire pour une chevelure douce et brillante. Son action complète celle du Shampoing Aloe-Jojoba.
+                        </p><hr>
+                        <p class="arb">عليك أن ترتبطي بعلاقة حب مع شعرك، اجعليه يبدو جذابا و قويا، ذلك بفضل بي إتش (الرقم الهيدروجيني) المتوازن و المرطب (البلسم) الذي يمزج بين جيل الألوفيرا المستقر و أفضل مستخلصات الجوجوبا، كما أضيف إليه عامل خاص للتخلص من الالكتروستاتيات التي تتكون على الشعر و مركب إضافي آخر للحد من تقصف الشعر ليترك شعرك ناعماً و محمياً من عوامل الجفاف.<br>
+                            بلسم الألوه بالجوجوبه مصمم خصيصا لكي يستعمل مباشرة بعد شامبو الألوة و الجوجوبا لتكييف الشعر و منحه الإحساس بالانتعاش و إعطاء مظهر حريري آني.</p>        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="https://lh3.googleusercontent.com/1b_hvPnzsSEBPZwqGz28TeHlk-5vA-BdtAOs685kTvveAP-MWZvfyVbIbewwooLYO7e1o1aBDA=w1366-h768-no">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;">FOREVER ALOE STYLING GEL</h3>
+                  </div>
+                  <div class="modal-body">
+                    <p class="fra">Le Gel Coiffant Aloès donne forme et maintien aux cheveux, qui restent bien coiffés toute la journée. L’association du gel d’Aloé Vera, de jojoba et d’un complexe d’acides gras et de protéines, permet de fortifier, de réparer et de protéger les cheveux. La fibre capillaire est renforcée, les cheveux restent brillants et bien hydratés. Sa formule « résistante à l’humidité » permet des coiffures fixées par tous les temps, secs ou humides. </p><hr>
+                        <p class="arb">عليك الإرتباط بعلاقة حب مع شعرك، امنحه مظهراً كما لو أنك عند مصفف الشعر، حيث الشعور بالملمس الحريري و ذلك بفضل بي إتش (الرقم الهيدروجيني) المتوازن و المرطب (البلسم) الذي يمزج بين جيل الألوفيرا المستقر و أفضل مستخلصات الجوجوبا، كما أضيف إليه عامل خاص للتخلص من الالكتروستاتيات التي تتكون على الشعر، و مركب إضافي آخر للحد من تقصف الشعر ليترك الشعر ناعماً و محمياً من عوامل الجفاف.<br>
+بلسم الألوه بالجوجوبه مصمم خصيصا لكي يستعمل مباشرة بعد شامبو الألوة و الجوجوبا لتكييف الشعر و منح الإحساس بالانتعاش و إعطاء مظهر حريري أنيق.</p>        
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <footer>
+        <div class="container" style="margin-bottom:40px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span style="margin-top:15px;">Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>

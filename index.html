@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="AR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cairo:700,600,400,300,200,900&subset=arabic,latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=El+Messiri&subset=arabic,latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Katibeh&subset=arabic,latin' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <!-- Gem style -->
+    <link rel="stylesheet" href="css/product.css">
+    <!-- Gem style -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
+    <!--scrolling animation-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+        <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/style3.css"/>    
+<!-- js -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script>
+    $(document).ready(function(){
+        if (Modernizr.touch) {
+            // show the close overlay button
+            $(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            $(".img").click(function(e){
+                if (!$(this).hasClass("hover")) {
+                    $(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            $(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if ($(this).closest(".img").hasClass("hover")) {
+                    $(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            $(".img").mouseenter(function(){
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                $(this).removeClass("hover");
+            });
+        }
+    });
+</script>
+</head>
+<body>
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top" style="background-color: black; margin-bottom: 0px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand cat_brand" style="color: white;">AKRAM SIOUDA FLP</a>
+                </div>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li style="margin-right:20px; pointer-events: none;cursor: default;font-size:22px;" class=""><a href="#" class="fa fa-mobile-phone"> <span style="font-size:18px;"> (+212) 06 90 87 83 89</span></a></li>
+                        <li class="hidden-xs"><a href="https://www.facebook.com/AkramSioudaFLP/" target="_blank" class="fa fa-facebook"></a></li>
+                        <li class="hidden-md hidden-sm hidden-xs"><a href="https://plus.google.com/u/0/108423768340326683368/posts" target="_blank" class="fa fa-google-plus"></a></li>
+                        <li class="hidden-xs"><a href="https://www.youtube.com/channel/UCItRtLHB3By9y_Iso2M43lA" target="_blank" class="fa fa-youtube"></a></li>
+                        <li style="font-family: 'Cairo', sans-serif;"><a href="catalogue.html">الكتالوچ</a></li>
+                        <li style="font-family: 'Cairo', sans-serif; padding-right:px;"><a href="index.html">الرئيسية <i class="fa fa-home"></i></a></li>
+                        <li class="hidden-lg hidden-md hidden-sm"><a href="https://www.facebook.com/AkramSioudaFLP/" target="_blank" class="fa-facebook-square"> FACEBOOK</a></li>
+                        <li class="hidden-lg hidden-md hidden-sm"><a href="https://www.youtube.com/channel/UCItRtLHB3By9y_Iso2M43lA" target="_blank" class="fa fa-youtube"> YOUTUBE</a></li>
+                        <li class="hidden-lg hidden-md hidden-sm"><a href="https://twitter.com/akram_siouda" target="_blank" class="fa fa-twitter"> TWITTER</a></li>
+                        <li class="hidden-lg hidden-md hidden-sm"><a href="https://plus.google.com/u/0/108423768340326683368/posts" target="_blank" class="fa fa-google-plus"> GOOGLE+</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <a id="Home"></a>
+            <div class="bs-example">
+                    <div class="">
+                        <div class="active item" style="background-image: url('Images/aloe.jpg');width:100%;height:100%;">
+                            <div class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; -webkit-animation-duration: 2s; -webkit-animation-delay: 300ms; -webkit-animation-iteration-count: infinite;">
+                                <h2 style="font-family: 'Indie Flower', cursive;color:white;margin-top:45px;">forever living products</h2>
+                                <h3 style="font-family: 'Indie Flower', cursive;">AKRAM SIOUDA FLP</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!--<a name="WhoWeAre"></a>-->
+    <a id="WhoWeAre"></a>
+		<div class="container" style="margin-bottom:50px;">
+            <h2 style="text-align:center;font-family: 'Cairo', sans-serif;padding-top:30px;padding-bottom:20px;">من نحن ؟</h2>
+      <div id="effect-5" class="effects clearfix">      
+            <div class="col-md-4 col-xs-12 wow flipInX" data-wow-duration="1s" style="margin-top:20px;">
+                <div class="img">
+                <img class="img-responsive" src="Images/rex-morgan.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_01">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;font-size:28px;font-family: 'El Messiri', sans-serif;">فوريڤر ليڤينغ برودكتس</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="ar-nos">
+                               فوريڤر ليڤينغ برودكتس ثمرة حصدها رجل اختار النجاح دربا له و سار عليه، إنه ريكس موغان الذي استطاع بإرادة من حديد على مدى أكثر من 30 سنة أن يكشف الستار عن منتجات بجودة استثنائية.<br>
+أسس ريكس موغان سنة 1978 فوريڤر ليڤينغ برودكتس و أطلق بالولايات المتحدة الأمريكية مجموعة من المنتجات كان من شأن جودتها و مفعولها الذي لقي استحسانا لدى الملايين من المستهلكين أن فتح الباب على مصارعيه لهذا النجاح الساحق المستوحى من منتجات جوهرها الألوفيرا، العشبة الطيبة و الكنز الهائل من المغذيات.<br> 
+استطاع ريكس موغان من خلال تحكمه في مجموع عملية تصنيع الهلام المثبت أن يضمن أعلى جودة للألوفيرا في العالم و رغم مرور أكثر من 30 سنة مازال المسار نحو المزيد من الإنجازات من خلال طرح سلسلة من المنتجات الجديدة كل سنة و حفاظها على نفس معايير الجودة.<br>
+اليوم أضحت فوريڤر ليڤينغ برودكتس توزع منتجاتها عن طريق أكثر من 9.5 ملايين من الأفراد و تغطي أكثر من 150 بلدا و تشغل أكثر من 10000 شخص حول العالم و تقترح فرصة مهنية رائعة تكمن في البيع المباشر.
+                            </p>         
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>       
+        <div class="col-md-4 col-xs-12 wow flipInX" data-wow-duration="1s" style="margin-top:20px;">
+            <div class="img">
+                <img class="img-responsive" src="Images/aloe_vera.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_02">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;font-size:28px;font-family: 'El Messiri', sans-serif;">نبتة الألوة ڤيرا</h3>
+                  </div>
+                  <div class="modal-body">
+                     <p class="ar-nos">
+                           عرفت الألوفيرا منذ قرون بفضل خصائصها المتعددة، و تركيبتها الكميائية الغنية ب 250 عنصرا مختلفا، من ضمنها فيتامين A و B و C و E ، علاوة على المعادن كالزنك و النحاس و الحديد و السكريات كالجلكوز و المانوز و السيلولوز و الدهون و البروتينات السكرية.
+أظهرت العديد من الدراسات تميز الألوڤيرا بقدرات خارقة في ترطيب البشرة و اختراق الجلد نتيجة احتوائها على السكر المتعدد. كما إنها تساعد علي تجديد البشرة عن طريق تكاثر خلايا القرنية و هي الخلايا الرئيسية المكونة للجلد، و تركيب الكولاجين من النوع الأول، مما يجعل هذا العمل الطبيعي يساهم ليس فقط في نمو بشرة صحية، بل أيضا في التئامها. تستعمل الألوڤيرا أيضا كمضاد للإلتهاب، و مسكن للحروق و لسع الحشرات و القراص و قنديل البحر.
+تستعمل الألوڤيرا داخليا كذالك لما لها من مساهمة في الحماية من الذرات الطليقة و تحفيز مناعتنا طبيعيا ضد الميكروبات.
+الألوڤيرا عشبة للإستعمال اليومي لرصد التوازن.
+                            </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+            <div class="col-md-4 col-xs-12 wow flipInX" data-wow-duration="1s" style="margin-top:20px;">
+                <div class="img">
+                <img class="img-responsive" src="Images/qualite.jpg">
+                <div class="overlay">
+                    <a href="#" class="expand img-responsive" data-toggle="modal" data-target="#myModal_03">+</a>
+                    <a class="close-overlay hidden">x</a>
+                </div>
+            </div>                  
+            <div class="modal fade" id="myModal_03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h3 style="text-align:center;font-size:28px;font-family: 'El Messiri', sans-serif;">معايير جودتنا دولية</h3>
+                  </div>
+                  <div class="modal-body">
+                            <p class="ar-nos">
+                           وحداتنا للتصنيع هي معتمدة وفق معايير الجودة الدولية :<br>
+                            في 2004 أحرز نظامنا في إدارة البيئة على شهادة إيزو 14001 لاحترامنا للبيئة خلال تصنيع منتجاتنا.<br>
+                            في 2008 أحرز نظامنا في إدارة البيئة على شهادة إيزو 9001 و ذالك للجودة الثابتة و المضمونة لمنتجاتنا.<br>
+                            في 2007 أحرز نظامنا في إدارة صحة و سلامة الأُجراء على شهادة إيزو 18001 و ذالك لاهتماننا براحة موظفينا.<br>
+                            متطلبات الجودة هذه معترف بها أيضا من طرف هيئات أخرى :<br>
+                            منتجاتنا هي الأولي التي تحصل على علامة الجودة من طرف المجلس العالمي لعلوم الألوڤيرا.<br>
+                            أغلب منتجاتنا هي مضمونة حلال و موافقة للشريعة اليهودية.<br>
+                            أكدت التجارب العلمية تميز مستحضراتنا التجميلة.<br>
+                            تمت المصادقة على نظام البيع لدينا من خلال انخراطنا في اتحاد البيع المباشر و احترامنا لمدونته الأخلاقية.<br>
+                            منتجاتنا مصادق عليها من طرف وزارة الصحة المغربية.
+                            </p>  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+            </div>
+    </div>
+
+            <a id="What_We_Offer"></a>
+            <div class="row" id="WhatWeOffer">
+                <div class="container">
+                       <div class="col-md-4 col-xs-12 products wow slideInLeft" data-wow-duration="1s" style="margin-top:20px;">
+                                <h2 style="text-align:center;font-family: 'Droid Arabic Kufi', serif;margin-bottom:20px;"> مراقبة مستمرة للجودة</h2>
+                                <div class="text-product">
+                                   فوريڤر تنجز و تراقب كل مرحلة من مراحل تصنيع الألوڤيرا من زراعة و حصاد و استخراج اللب و التثبيت و التعبئة و التغليف.<br>
+مزارعنا تتواجد بالولايات المتحدة الأمريكية و المكسيك و جمهورية الدومنيك و هي أماكن ملائمة لنمو الألوڤيرا بفضل الظروف المناخية المثلى. الحرارة المناسبة و الزراعة المتقنة التي توفر لكل نبتة تجعل من هذه المادة الأولية النباتية كنزا ثمينا و مادة غنية بالمواد الغذائية و الفيتامينات و المعادن و الأحماض الأمينية.<br>
+تقطف الأوراق بالأيدي بعناية لتفادي كل تلف و تنقل مباشرة إلى المصانع التي أنشأت بالقرب من مزارعنا أين يتم غسلها و شفطها بعناية لتكون جاهزة لاستخراج لبها و تحويلها إلى هلام.<br>
+بنفس الطريقة يتم التعامل مع باقي المنتجات. فإن عملية المراقبة المستمرة للجودة و لتطوير المنتج تبقى مستمرة و بانتظام لضمان فعالية أكبر و جودة أفضل.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-xs-12 products wow slideInRight" data-wow-duration="1s" style="margin-top:20px;margin-bottom:20px;">
+                                <h2 style="text-align:center;font-family: 'Droid Arabic Kufi', serif;margin-bottom:20px;">تنوع منتجاتنا</h2>
+                            <div class="text-product">
+                              على عكس ما يعتقد البعض فكون الشركة رقم واحد عالميا في زراعة الألوڤير و تصنيعها لا يعني أن منتجاتها مقتصرة فقط على هذه النبتة، فمع مرور السنين طورت الشركة نفسها و أصبحت مع كل سنة تقريبا تقدم منتج جديد.
+لذالك ستجد عزيزي المستهلك كل ما تحتاج إليه، منتجات تعنى باللياقة، الجمال، البيت، الأطفال و حتى الحيوانات.<br>
+لدينا منتجات للرياضيين، مشروبات طاقية و مكملات غذائية. منتجات لتحفيز جهازك المناعي و تقوية العظام و تنشيط الدورة الدموية. منتجات للإعتناء ببشرك و تخليصها من الشوائب و تقليل أثر تقدم السن عليها. منتجات للإعتناء بالشعر الضعيف و المقصف. منتجات سونيا للجمال و ماكياج فاخر لإظهار جمالك.<br>
+للتعرف أكثر على منتجات فوريڤر المتنوعة المرجو الإلتحاق بكتالوچ الموقع، حيث ستجد كل المنتجات.                           
+                            </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 products wow slideInLeft" data-wow-duration="1s" style="margin-top:20px;">
+                                <h2 style="text-align:center;font-family: 'Droid Arabic Kufi', serif;margin-bottom:20px;">فرصتك لتحقيق الربح</h2>
+                                <div class="text-product">
+                                أنتم راضون عن جودة منتجات فوريڤر، و قد سبق لكم أن قمتم بطلبها لأقاربكم أو من تعرفون حولكم، إذن لماذا لا تمرون إلى المرحلة الموالية بأن تنضموا إلينا و تصبحوا موزعين مستقلين لدى شركة فوريڤر.<br>
+إضافة إلى جودة باقة المنتجات المقدمة لكم، فوريڤر لڤينغ برودكتس تقترح عليكم خطة تسويقية مهنية، متاحة لكم و قريبة منكم. العملية سهلة جدا :<br>
+يكفي أن تقوموا بتعريف المنتج إلى من حولكم حتى تتمكنوا من كسب زبناء مخلصين و دائمين، إضافة إلى الإستقلالية و الحرية المهنية ثم عائدات إضافية، كلها ميزات إيجابية تستفيد منها عندما تصبح موزع مع شركة فوريڤر ليڤيغ برودكتس.<br>
+إن كنتم مهتمين و حتى أجيب على كل أسئلتكم و استفساراتكم.<br>
+اتصلوا بي مباشرة عبر الرقم : <span style="direction:ltr">89 83 87 90 06</span>.<br>
+                                    أو على صفحة الفسبوك : <a href="https://www.facebook.com/AkramSioudaFLP/" target="_blank"><span class="fa"> (إضغط هنا)</span></a>.
+                            </div>
+                            </div>
+
+                        </div>
+                </div>
+
+        <a id="Gallary"></a>
+            <div class="container" style="padding-top:50px;padding-bottom:50px;">
+                
+            <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/HL1RMTJvruafvOdo-EnwML6opXWP5yQlcQiFBNJcjJLq5Wj-MVDL3DX3P6lEyZOAT4Nqx_jaAw=w1366-h768-no" width="400"/>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/9P1H7wD8PCXs8wUX-Kjg-jKyEX8wUYIsApi-tlFvbGR4n0215nSlm8djDsFkXvLvtTy_ERY2fg=w1366-h768-no" width="400"/>
+                </div>
+            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/I1A9SiWe2y2F1m28E8ztnYOSm7wnfT1LVL_K1uEzZUBLd3pe-gn2l9yqnakBILwjmNCrnpz8LA=w1366-h768-no" width="400"/>
+                </div>
+            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/8TwjOdbSTT3INaUItJQpuZdBdgwqdGk7ZuwZaK8ewTI8jPj7vNIJzO9d5wlxPkOhrrc3BM4NSA=w1366-h768-no" width="400"/>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/-sAoFdOYFMdo/V5ELzIu8GnI/AAAAAAAAAM0/_y7EvfFuJ1AaT7liJUd8K_w8CI4UmFFjA/w346-h331/MARINE.jpg" width="400"/>
+                </div>
+            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/-QpecNds8rb0/V5EL-1RAYXI/AAAAAAAAANI/QKRTtyfHr_IPi7y2V-Pk2UyxJkdPUpx6Q/w335-h320-p/COMPACTE.jpg" width="400"/>
+                </div>
+            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/-AwCVtrU2VAo/V5EKZxSA5VI/AAAAAAAAAM0/R_MT8rjqa_k5N8GeoTNej7iweDaxkFOaA/w335-h320-p/absorbent.jpg" width="400"/>
+                </div>
+            </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="margin-top:20px;">
+		        <div class="view-featured wow bounceIn" data-wow-duration="1s">
+                    <img class="img-responsive" src="https://lh3.googleusercontent.com/jD9ECVExNNCgQ1Uyma2GZ58tp2xJEWXcRJNRNPblSpV3C0xn1yLD_E3SkwDz6ftOcSI2U1yRqg=w1366-h768-no" width="400"/>
+                </div>
+            </div>  
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:20px;">
+                <a href="catalogue.html"><button type="button" class="btn btn-success btn-lg btn-block">LE CATALOGUE FLP</button></a>
+            </div>
+        </div>
+    
+    <footer>
+        <div class="container" style="margin-bottom:30px;">
+            <div class="text-footer">
+                AKRAM SIOUDA FLP<br>
+               <span>Copyright &copy; Akram Web 2016</span>  
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</html>
